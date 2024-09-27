@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册登录页面</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+	<!-- header -->
+	<div class="head">
+		<span id="title">前端答题网站</span>
+	</div>
+
+	<!-- body -->
+	<div>
+		<h4>用户名：</h4> 
+		<input type="text" id="user" placeholder="请输入字母、数字或纯汉字" onblur="checkUsername()">
+		<span id="span_user"></span>
+	</div>
+	<div>
+		<h4>密码：</h4>
+		<input type="password" id="pwd"  placeholder="请输入长度为8-16的字母或数字" onblur="checkPwd()">
+		<span id="span_pwd"></span>
+	</div>
+
+	<!-- footer -->
+	<input type="button" id="log" value="登录" onclick="Login()">
+	<script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>
